@@ -1,0 +1,102 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>My Foo Tests</title>
+    <script language="javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js"
+        type="text/javascript"></script>
+    <script language="javascript" src="qunit.js" type="text/javascript"></script>
+
+    <link media="screen" href="qunit.css" type="text/css" rel="stylesheet" />
+    <script type="text/javascript">
+//        $(document).ready(function () {
+
+//            var qr = new QR();
+//            qr.appendDiv();
+
+//            test("Should Put div qr-container onto page", function () {
+
+//                equals($("#qr-container").length, 1);
+//            });
+
+//            test("Should Move Div to To Left of Page", function () {
+
+//                equals($("#qr-container").css('top'), '0px');
+//                equals($("#qr-container").css('left'), '0px');
+//            });
+
+//            test("Should get current page url encoded", function () {
+//                var curpage = qr.GetCurrentPageEncoded();
+
+//                equals(escape(document.URL), curpage);
+//            });
+
+//            test("Should get URL for an passed in url", function () {
+//                var url = qr.GetQRSrc("http%3A%2F%2Fwww.google.com");
+
+//                equals("https://chart.googleapis.com/chart?chs=400x400&cht=qr&ch1=http%3A%2F%2Fwww.google.com", url);
+//            });
+
+//            test("Should put qr img into div", function () {
+//                equals($("#qr-container img").length, 1);
+//            });
+
+//        });
+            
+    </script>
+</head>
+<body>
+    <h1 id="qunit-header">
+        QUnit Test Suite - Step Addon</h1>
+    <h2 id="qunit-banner">
+    </h2>
+    <div id="qunit-testrunner-toolbar">
+    </div>
+    <h2 id="qunit-userAgent">
+    </h2>
+    <ol id="qunit-tests">
+    </ol>
+    <canvas id="qunit-canvas" width="5" height="5"></canvas>
+
+    <!--<a href="javascript:(function(){
+    var QR = function () {
+    var _this = this;
+    var width = 400;
+    var height = 400;
+
+    baseQRUrl = 'https://chart.googleapis.com/chart?chs=' + width + 'x' + height + '&cht=qr&ch1=';
+
+    _this.appendDiv = function () {
+        var div = document.createElement('div');
+        div.setAttribute('id', 'qr-container');
+        div.setAttribute('style', 'position: absolute; top: 0; left: 0;');
+
+        div.appendChild(getImage());
+
+        document.getElementsByTagName('body')[0].appendChild(div);
+    };
+
+    function getImage() {
+        var img = document.createElement('img'),
+        imgSrc = _this.GetQRSrc(_this.GetCurrentPageEncoded());
+
+        img.setAttribute('src', imgSrc);
+
+        return img;
+    }
+
+    _this.GetCurrentPageEncoded = function () {
+        return escape(document.URL);
+    };
+
+    _this.GetQRSrc = function (url) {
+        return baseQRUrl + url;
+    };
+}
+
+var qr = new QR();
+qr.appendDiv();
+    })()">Drag Me</a>-->
+        <script type="text/javascript" src="qrBookmarklet.js" language="javascript"></script>
+</body>
+</html>
+
